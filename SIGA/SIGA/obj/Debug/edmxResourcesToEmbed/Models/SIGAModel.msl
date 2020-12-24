@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SIGADBModelStoreContainer" CdmEntityContainer="SIGADBEntities">
+    <EntitySetMapping Name="TBL_MARCAS">
+      <EntityTypeMapping TypeName="SIGADBModel.TBL_MARCAS">
+        <MappingFragment StoreEntitySet="TBL_MARCAS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MARCA_DESCRIP" ColumnName="MARCA_DESCRIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MOVIMIENTOS">
+      <EntityTypeMapping TypeName="SIGADBModel.TBL_MOVIMIENTOS">
+        <MappingFragment StoreEntitySet="TBL_MOVIMIENTOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROD_ID" ColumnName="PROD_ID" />
+          <ScalarProperty Name="MOV_FEC_ENTRADA" ColumnName="MOV_FEC_ENTRADA" />
+          <ScalarProperty Name="MOV_USR_ENTRADA" ColumnName="MOV_USR_ENTRADA" />
+          <ScalarProperty Name="MOV_FEC_SALIDA" ColumnName="MOV_FEC_SALIDA" />
+          <ScalarProperty Name="MOV_USR_SALIDA" ColumnName="MOV_USR_SALIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_PRODUCTOS">
+      <EntityTypeMapping TypeName="SIGADBModel.TBL_PRODUCTOS">
+        <MappingFragment StoreEntitySet="TBL_PRODUCTOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROD_DESCRIP" ColumnName="PROD_DESCRIP" />
+          <ScalarProperty Name="TIPO_ID" ColumnName="TIPO_ID" />
+          <ScalarProperty Name="PROD_MODELO" ColumnName="PROD_MODELO" />
+          <ScalarProperty Name="PROV_ID" ColumnName="PROV_ID" />
+          <ScalarProperty Name="UBIC_ID" ColumnName="UBIC_ID" />
+          <ScalarProperty Name="PROD_PRECIO" ColumnName="PROD_PRECIO" />
+          <ScalarProperty Name="PROD_COSTO" ColumnName="PROD_COSTO" />
+          <ScalarProperty Name="IMG" ColumnName="IMG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_PROVEEDORES">
+      <EntityTypeMapping TypeName="SIGADBModel.TBL_PROVEEDORES">
+        <MappingFragment StoreEntitySet="TBL_PROVEEDORES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROV_DESCRIP" ColumnName="PROV_DESCRIP" />
+          <ScalarProperty Name="PROV_NUM_IDENT" ColumnName="PROV_NUM_IDENT" />
+          <ScalarProperty Name="PROV_TEL1" ColumnName="PROV_TEL1" />
+          <ScalarProperty Name="PROV_TEL2" ColumnName="PROV_TEL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_TIPOS">
+      <EntityTypeMapping TypeName="SIGADBModel.TBL_TIPOS">
+        <MappingFragment StoreEntitySet="TBL_TIPOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TIPO_DESCRIP" ColumnName="TIPO_DESCRIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_UBICACIONES">
+      <EntityTypeMapping TypeName="SIGADBModel.TBL_UBICACIONES">
+        <MappingFragment StoreEntitySet="TBL_UBICACIONES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UBIC_PASILLO" ColumnName="UBIC_PASILLO" />
+          <ScalarProperty Name="UBIC_SECCION" ColumnName="UBIC_SECCION" />
+          <ScalarProperty Name="UBIC_NIVEL" ColumnName="UBIC_NIVEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

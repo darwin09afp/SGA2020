@@ -1,0 +1,58 @@
+﻿@model SIGA.Models.TBL_MOVIMIENTOS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_MOVIMIENTOS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MOV_FEC_ENTRADA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOV_FEC_ENTRADA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOV_USR_ENTRADA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOV_USR_ENTRADA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOV_FEC_SALIDA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOV_FEC_SALIDA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOV_USR_SALIDA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOV_USR_SALIDA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBL_PRODUCTOS.PROD_DESCRIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBL_PRODUCTOS.PROD_DESCRIP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

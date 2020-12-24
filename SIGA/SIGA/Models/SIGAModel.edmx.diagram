@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cbcea497f78b463ba6963ee7fed7cbb5" Name="Diagram1">
+        <EntityTypeShape EntityType="SIGADBModel.TBL_MARCAS" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGADBModel.TBL_MOVIMIENTOS" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGADBModel.TBL_PRODUCTOS" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGADBModel.TBL_PROVEEDORES" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGADBModel.TBL_TIPOS" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGADBModel.TBL_UBICACIONES" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="SIGADBModel.FK_TBL_MOVIMIENTOS_TBL_PRODUCTOS" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGADBModel.FK_TBL_PRODUCTOS_TBL_PROVEEDORES" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGADBModel.FK_TBL_PRODUCTOS_TBL_TIPOS" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGADBModel.FK_TBL_PRODUCTOS_TBL_UBICACIONES" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

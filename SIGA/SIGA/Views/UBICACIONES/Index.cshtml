@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SIGA.Models.TBL_UBICACIONES>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UBIC_PASILLO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UBIC_SECCION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UBIC_NIVEL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UBIC_PASILLO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UBIC_SECCION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UBIC_NIVEL)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

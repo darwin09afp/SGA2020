@@ -1,0 +1,42 @@
+﻿@model SIGA.Models.TBL_UBICACIONES
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_UBICACIONES</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UBIC_PASILLO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UBIC_PASILLO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UBIC_SECCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UBIC_SECCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UBIC_NIVEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UBIC_NIVEL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

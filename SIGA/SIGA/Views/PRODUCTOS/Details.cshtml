@@ -1,0 +1,82 @@
+﻿@model SIGA.Models.TBL_PRODUCTOS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_PRODUCTOS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PROD_DESCRIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROD_DESCRIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROD_MODELO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROD_MODELO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROD_PRECIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROD_PRECIO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROD_COSTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROD_COSTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBL_PROVEEDORES.PROV_DESCRIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBL_PROVEEDORES.PROV_DESCRIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBL_TIPOS.TIPO_DESCRIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBL_TIPOS.TIPO_DESCRIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBL_UBICACIONES.UBIC_PASILLO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBL_UBICACIONES.UBIC_PASILLO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SIGADBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBL_MARCAS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MARCA_DESCRIP" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_MOVIMIENTOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PROD_ID" Type="int" />
+    <Property Name="MOV_FEC_ENTRADA" Type="datetime" />
+    <Property Name="MOV_USR_ENTRADA" Type="varchar" MaxLength="50" />
+    <Property Name="MOV_FEC_SALIDA" Type="datetime" />
+    <Property Name="MOV_USR_SALIDA" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_PRODUCTOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PROD_DESCRIP" Type="varchar" MaxLength="50" />
+    <Property Name="TIPO_ID" Type="int" />
+    <Property Name="PROD_MODELO" Type="varchar" MaxLength="50" />
+    <Property Name="PROV_ID" Type="int" />
+    <Property Name="UBIC_ID" Type="int" />
+    <Property Name="PROD_PRECIO" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="PROD_COSTO" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="IMG" Type="image" />
+  </EntityType>
+  <EntityType Name="TBL_PROVEEDORES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PROV_DESCRIP" Type="varchar" MaxLength="50" />
+    <Property Name="PROV_NUM_IDENT" Type="varchar" MaxLength="13" />
+    <Property Name="PROV_TEL1" Type="varchar" MaxLength="12" />
+    <Property Name="PROV_TEL2" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="TBL_TIPOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TIPO_DESCRIP" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_UBICACIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UBIC_PASILLO" Type="varchar" MaxLength="20" />
+    <Property Name="UBIC_SECCION" Type="varchar" MaxLength="20" />
+    <Property Name="UBIC_NIVEL" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_TBL_MOVIMIENTOS_TBL_PRODUCTOS">
+    <End Role="TBL_PRODUCTOS" Type="Self.TBL_PRODUCTOS" Multiplicity="0..1" />
+    <End Role="TBL_MOVIMIENTOS" Type="Self.TBL_MOVIMIENTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_PRODUCTOS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_MOVIMIENTOS">
+        <PropertyRef Name="PROD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_PRODUCTOS_TBL_PROVEEDORES">
+    <End Role="TBL_PROVEEDORES" Type="Self.TBL_PROVEEDORES" Multiplicity="0..1" />
+    <End Role="TBL_PRODUCTOS" Type="Self.TBL_PRODUCTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_PROVEEDORES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_PRODUCTOS">
+        <PropertyRef Name="PROV_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_PRODUCTOS_TBL_TIPOS">
+    <End Role="TBL_TIPOS" Type="Self.TBL_TIPOS" Multiplicity="0..1" />
+    <End Role="TBL_PRODUCTOS" Type="Self.TBL_PRODUCTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_TIPOS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_PRODUCTOS">
+        <PropertyRef Name="TIPO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_PRODUCTOS_TBL_UBICACIONES">
+    <End Role="TBL_UBICACIONES" Type="Self.TBL_UBICACIONES" Multiplicity="0..1" />
+    <End Role="TBL_PRODUCTOS" Type="Self.TBL_PRODUCTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_UBICACIONES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_PRODUCTOS">
+        <PropertyRef Name="UBIC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SIGADBModelStoreContainer">
+    <EntitySet Name="TBL_MARCAS" EntityType="Self.TBL_MARCAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_MOVIMIENTOS" EntityType="Self.TBL_MOVIMIENTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_PRODUCTOS" EntityType="Self.TBL_PRODUCTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_PROVEEDORES" EntityType="Self.TBL_PROVEEDORES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_TIPOS" EntityType="Self.TBL_TIPOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_UBICACIONES" EntityType="Self.TBL_UBICACIONES" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBL_MOVIMIENTOS_TBL_PRODUCTOS" Association="Self.FK_TBL_MOVIMIENTOS_TBL_PRODUCTOS">
+      <End Role="TBL_PRODUCTOS" EntitySet="TBL_PRODUCTOS" />
+      <End Role="TBL_MOVIMIENTOS" EntitySet="TBL_MOVIMIENTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_PRODUCTOS_TBL_PROVEEDORES" Association="Self.FK_TBL_PRODUCTOS_TBL_PROVEEDORES">
+      <End Role="TBL_PROVEEDORES" EntitySet="TBL_PROVEEDORES" />
+      <End Role="TBL_PRODUCTOS" EntitySet="TBL_PRODUCTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_PRODUCTOS_TBL_TIPOS" Association="Self.FK_TBL_PRODUCTOS_TBL_TIPOS">
+      <End Role="TBL_TIPOS" EntitySet="TBL_TIPOS" />
+      <End Role="TBL_PRODUCTOS" EntitySet="TBL_PRODUCTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_PRODUCTOS_TBL_UBICACIONES" Association="Self.FK_TBL_PRODUCTOS_TBL_UBICACIONES">
+      <End Role="TBL_UBICACIONES" EntitySet="TBL_UBICACIONES" />
+      <End Role="TBL_PRODUCTOS" EntitySet="TBL_PRODUCTOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

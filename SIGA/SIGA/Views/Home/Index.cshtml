@@ -1,0 +1,363 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <img src="~/Content/assets/img/iconos/capacidad.png">
+
+                    </div>
+                    <div class="col-7 col-md-8">
+                        <div class="numbers">
+                            <p class="card-category">Capacidad</p>
+                            <p class="card-title">78%<p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                    <i class="fa fa-refresh"></i>
+                    Actualizar
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                            <img src="~/Content/assets/img/iconos/Ventas.png">
+
+                        </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                        <div class="numbers">
+                            <p class="card-category">Piezas vendidas</p>
+                            <p class="card-title"></p>1,345<p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                    <i class="fa fa-calendar-o"></i>
+                    Mes
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                        <img src="~/Content/assets/img/iconos/recibidas.png">
+                        
+                        </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                        <div class="numbers">
+                            <p class="card-category">Piezas recibidas</p>
+                            <p class="card-title">27<p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                    <i class="fa fa-calendar-o"></i>
+                    Mes
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                            <img src="~/Content/assets/img/iconos/prov.png">
+                            
+                        </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                        <div class="numbers">
+                            <p class="card-category">Proveedores</p>
+                            <p class="card-title">65<p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                    <i class="fa fa-refresh"></i>
+                    Actualizar
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Buscar producto</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control col-md-12" placeholder="Buscar por palabra clave...">
+
+                            </div>
+                            <br />
+
+
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <img src="~/Content/assets/img/iconos/lupa.png" width="90">
+
+                        </a>
+                    </div>
+
+                </div>
+                <div>
+                    <a style="justify-content:right" href="#">Busqueda Avanzada</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Buscar producto</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control col-md-12" placeholder="Buscar por palabra clave...">
+
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Tipo de pieza</label>
+
+                                    <div class="input-group no-border">
+
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Seleccionar tipo</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Marca</label>
+
+                                    <div class="input-group no-border">
+
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Seleccionar marca</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br />
+
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <img src="~/Content/assets/img/iconos/lupa.png" width="180">
+
+                        </a>
+                    </div>
+                </div>
+                
+                <br />
+                @*<a style="justify-content:right" href="#">Busqueda Simple</a>*@
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title"> Simple Table</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class=" text-primary">
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Country
+                        </th>
+                        <th>
+                            City
+                        </th>
+                        <th class="text-right">
+                            Salary
+                        </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Dakota Rice
+                                </td>
+                                <td>
+                                    Niger
+                                </td>
+                                <td>
+                                    Oud-Turnhout
+                                </td>
+                                <td class="text-right">
+                                    $36,738
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Minerva Hooper
+                                </td>
+                                <td>
+                                    Curaçao
+                                </td>
+                                <td>
+                                    Sinaai-Waas
+                                </td>
+                                <td class="text-right">
+                                    $23,789
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sage Rodriguez
+                                </td>
+                                <td>
+                                    Netherlands
+                                </td>
+                                <td>
+                                    Baileux
+                                </td>
+                                <td class="text-right">
+                                    $56,142
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Philip Chaney
+                                </td>
+                                <td>
+                                    Korea, South
+                                </td>
+                                <td>
+                                    Overland Park
+                                </td>
+                                <td class="text-right">
+                                    $38,735
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Doris Greene
+                                </td>
+                                <td>
+                                    Malawi
+                                </td>
+                                <td>
+                                    Feldkirchen in Kärnten
+                                </td>
+                                <td class="text-right">
+                                    $63,542
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Mason Porter
+                                </td>
+                                <td>
+                                    Chile
+                                </td>
+                                <td>
+                                    Gloucester
+                                </td>
+                                <td class="text-right">
+                                    $78,615
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Jon Porter
+                                </td>
+                                <td>
+                                    Portugal
+                                </td>
+                                <td>
+                                    Gloucester
+                                </td>
+                                <td class="text-right">
+                                    $98,615
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header ">
+                <h5 class="card-title">Movimientos</h5>
+                <p class="card-category">Mes actual</p>
+            </div>
+            <div class="card-body ">
+                <canvas id=chartHours width="400" height="100"></canvas>
+            </div>
+            <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                    <i class="fa fa-history"></i> Actualizado hace 3 minutos
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

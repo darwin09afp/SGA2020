@@ -1,0 +1,50 @@
+﻿@model SIGA.Models.TBL_PROVEEDORES
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_PROVEEDORES</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PROV_DESCRIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROV_DESCRIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROV_NUM_IDENT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROV_NUM_IDENT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROV_TEL1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROV_TEL1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROV_TEL2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROV_TEL2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
