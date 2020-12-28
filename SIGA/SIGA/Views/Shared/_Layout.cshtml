@@ -27,18 +27,18 @@
         <div class="sidebar" data-color="white" data-active-color="danger">
             @if (User.Identity.IsAuthenticated)
             {
-                if (User.IsInRole("Administrador"))
-                {
-                    @Html.Partial("_SideBarAdmin")
-                }
-                else if (User.IsInRole("Operador"))
-                {
-                    @Html.Partial("_SideBarOp")
-                }
-                else
-                {
-                    @Html.Partial("_SideBarUsr")
-                }
+                @*if (User.IsInRole("Administrador"))
+                    {
+                        @Html.Partial("_SideBarAdmin")
+                    }
+                    else if (User.IsInRole("Operador"))
+                    {
+                        @Html.Partial("_SideBarOp")
+                    }
+                    else
+                    {*@
+                @Html.Partial("_SideBarUsr")
+                //}
             }
             else
             {

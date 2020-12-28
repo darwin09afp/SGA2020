@@ -5,7 +5,7 @@
             <div class="logo-image-small">
                 <img src="~/Content/assets/img/logo-small.png">
             </div>
-            <!-- <p>CT</p> -->
+            
         </a>
         <a href="#" class="simple-text logo-normal">
             SIGA
@@ -16,48 +16,62 @@
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="active ">
-                <a href="./dashboard.html">
-                    <i class="nc-icon nc-bank"></i> 
+            <li>
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/home.png">
+                    </i> 
                     <p>INICIO</p>
                 </a>
             </li>
             <li>
-                <a href="./icons.html">
-                    <i class="nc-icon nc-diamond"></i>
+                <a href="@Url.Action("Index", "PRODUCTOS")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/list.png">
+                    </i>
                     <p>Productos</p>
                 </a>
             </li>
             <li>
-                <a href="./map.html">
-                    <i class="nc-icon nc-pin-3"></i>
+                <a href="@Url.Action("Ubicaciones", "PRODUCTOS")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/location.png">
+                    </i>
                     <p>Almacén virtual</p>
                 </a>
             </li>
-            <li>
-                <a href="./notifications.html">
-                    <i class="nc-icon nc-bell-55"></i>
+            @*<li>
+                <a href="@Url.Action("Index", "PRODUCTOS")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/bell.png">
+                    </i>
                     <p>Notificaciones</p>
                 </a>
-            </li>
+            </li>*@
             <li>
-                <a href="./user.html">
-                    <i class="nc-icon nc-single-02"></i>
+                <a href="@Url.Action("Index", "MOVIMIENTOS")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/cargo2.png">
+                    </i>
                     <p>Mis Movimientos</p>
                 </a>
             </li>
             <li>
-                <a href="./tables.html">
-                    <i class="nc-icon nc-tile-56"></i>
+                <a href="@Url.Action("Admin", "Home")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/admin.png">
+                    </i>
                     <p>Administración</p>
                 </a>
             </li>
-            @*<li class="active-pro">
-                <a href="./upgrade.html">
-                    <i class="nc-icon nc-spaceship"></i>
-                    <p>Upgrade to PRO</p>
+            <li class="active-pro">
+                <a href="@Url.Action("Login", "Account")">
+                    <i class="">
+                        <img src="~/Content/assets/img/iconos/sesion.png">
+                    </i>
+                    <p>INICIAR SESIÓN</p>
                 </a>
-            </li>*@
+            </li>
         </ul>
     </div>
 </div>

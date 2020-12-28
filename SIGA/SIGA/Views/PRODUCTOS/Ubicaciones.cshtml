@@ -1,0 +1,385 @@
+﻿@model IEnumerable<SIGA.Models.TBL_PRODUCTOS>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Buscar en almacén</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Pasillo</label>
+
+                                    <div class="input-group no-border">
+
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Seleccionar pasillo</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Sección</label>
+
+                                    <div class="input-group no-border">
+
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Seleccionar sección</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Nivel</label>
+
+                                    <div class="input-group no-border">
+
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Seleccionar nivel</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br />
+
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <img src="~/Content/assets/img/iconos/lupa.png" width="100">
+
+                        </a>
+                    </div>
+                </div>
+
+                <br />
+                @*<a style="justify-content:right" href="#">Busqueda Simple</a>*@
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" src="~/content/assets/img/mike2.jpg" alt="...">
+                        <h5 class="title">Aro 22 Cromado</h5>
+                    </a>
+                    <p class="description">
+                        Breve descripción de pieza
+                    </p>
+                </div>
+                <p class="description text-center">
+
+                    Marca: Marca<br>
+                    Modelo: Modelo
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                            <h5>12<br><small>Pasillo</small></h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                            <h5>3<br><small>Sección</small></h5>
+                        </div>
+                        <div class="col-lg-3 mr-auto">
+                            <h5>2<br><small>Nivel</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" src="~/content/assets/img/mike2.jpg" alt="...">
+                        <h5 class="title">Aro 22 Cromado</h5>
+                    </a>
+                    <p class="description">
+                        Breve descripción de pieza
+                    </p>
+                </div>
+                <p class="description text-center">
+
+                    Marca: Marca<br>
+                    Modelo: Modelo
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                            <h5>12<br><small>Pasillo</small></h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                            <h5>3<br><small>Sección</small></h5>
+                        </div>
+                        <div class="col-lg-3 mr-auto">
+                            <h5>2<br><small>Nivel</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" src="~/content/assets/img/mike2.jpg" alt="...">
+                        <h5 class="title">Aro 22 Cromado</h5>
+                    </a>
+                    <p class="description">
+                        Breve descripción de pieza
+                    </p>
+                </div>
+                <p class="description text-center">
+
+                    Marca: Marca<br>
+                    Modelo: Modelo
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                            <h5>12<br><small>Pasillo</small></h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                            <h5>3<br><small>Sección</small></h5>
+                        </div>
+                        <div class="col-lg-3 mr-auto">
+                            <h5>2<br><small>Nivel</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" src="~/content/assets/img/mike2.jpg" alt="...">
+                        <h5 class="title">Aro 22 Cromado</h5>
+                    </a>
+                    <p class="description">
+                        Breve descripción de pieza
+                    </p>
+                </div>
+                <p class="description text-center">
+
+                    Marca: Marca<br>
+                    Modelo: Modelo
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                            <h5>12<br><small>Pasillo</small></h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                            <h5>3<br><small>Sección</small></h5>
+                        </div>
+                        <div class="col-lg-3 mr-auto">
+                            <h5>2<br><small>Nivel</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" src="~/content/assets/img/mike2.jpg" alt="...">
+                        <h5 class="title">Aro 22 Cromado</h5>
+                    </a>
+                    <p class="description">
+                        Breve descripción de pieza
+                    </p>
+                </div>
+                <p class="description text-center">
+
+                    Marca: Marca<br>
+                    Modelo: Modelo<br>
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                            <h5>12<br><small>Pasillo</small></h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                            <h5>3<br><small>Sección</small></h5>
+                        </div>
+                        <div class="col-lg-3 mr-auto">
+                            <h5>2<br><small>Nivel</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" src="~/content/assets/img/mike2.jpg" alt="...">
+                        <h5 class="title">Aro 22 Cromado</h5>
+                    </a>
+                    <p class="description">
+                        Breve descripción de pieza
+                    </p>
+                </div>
+                <p class="description text-center">
+
+                    Marca: Marca<br>
+                    Modelo: Modelo
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                            <h5>12<br><small>Pasillo</small></h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                            <h5>3<br><small>Sección</small></h5>
+                        </div>
+                        <div class="col-lg-3 mr-auto">
+                            <h5>2<br><small>Nivel</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PROD_DESCRIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROD_MODELO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROD_PRECIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROD_COSTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IMG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBL_PROVEEDORES.PROV_DESCRIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBL_TIPOS.TIPO_DESCRIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBL_UBICACIONES.UBIC_PASILLO)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROD_DESCRIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROD_MODELO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROD_PRECIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROD_COSTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IMG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBL_PROVEEDORES.PROV_DESCRIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBL_TIPOS.TIPO_DESCRIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBL_UBICACIONES.UBIC_PASILLO)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+
+    </table>*@

@@ -21,6 +21,14 @@ namespace SIGA.Controllers
             return View(tBL_PRODUCTOS.ToList());
         }
 
+
+        // GET: PRODUCTOS
+        public ActionResult Ubicaciones()
+        {
+            var tBL_PRODUCTOS = db.TBL_PRODUCTOS.Include(t => t.TBL_PROVEEDORES).Include(t => t.TBL_TIPOS).Include(t => t.TBL_UBICACIONES);
+            return View(tBL_PRODUCTOS.ToList());
+        }
+
         // GET: PRODUCTOS/Details/5
         public ActionResult Details(int? id)
         {

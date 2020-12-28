@@ -13,7 +13,7 @@ namespace SIGA.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Admin()
         {
             ViewBag.Message = "Your application description page.";
 
