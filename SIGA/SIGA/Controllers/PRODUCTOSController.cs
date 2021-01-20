@@ -10,6 +10,7 @@ using SIGA.Models;
 
 namespace SIGA.Controllers
 {
+    [Authorize]
     public class PRODUCTOSController : Controller
     {
         private SIGADBEntities db = new SIGADBEntities();

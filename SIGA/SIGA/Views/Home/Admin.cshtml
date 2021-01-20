@@ -8,20 +8,31 @@
                 @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
             </div>
             <div class="card-body">
-                <div class="author">
-                    <a href="">
-                        <img class="avatar border-gray" src="~/content/assets/img/piezas2.jpg" alt="...">
-                        <h5 class="title">Productos</h5>
-                    </a>
-                </div>
-                <br />
-                <div style="text-align:center">
-                    <input type="button" class="btn-sm btn-info" style="text-align:center" value="Ver productos">
-                    <input type="button" class="btn-sm btn-success" style="text-align:center" value="Nuevo producto">
-                </div>
+                <div class="row">
+                    <div class="author col-sm-12">
+                        <a href="@Url.Action("Index", "PRODUCTOS")">
+                            <img class="avatar border-gray" src="~/content/assets/img/piezas2.jpg" alt="...">
+                            <h5 class="title">Productos</h5>
+                        </a>
+                    </div>
+                    <p class="description text-center">
+                        En esta sección podrá encontrar todos los productos disponibles
+                        en el almacén, como tambien crear nuevos.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="col-sm-12" style="text-align:center">
+                        <a href="@Url.Action("Index", "PRODUCTOS")">
+                            <input type="button" class="btn btn-info" style="text-align:center" value="Ver todos">
+                        </a>
+                        <a href="@Url.Action("Create", "PRODUCTOS")">
+                            <input type="button" class="btn btn-success" style="text-align:center" value="Nuevo">
 
+                        </a>
+                    </div>
+
+                </div>
             </div>
-
         </div>
     </div>
     <div class="col-md-4">
@@ -30,20 +41,30 @@
                 @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
             </div>
             <div class="card-body">
-                <div class="author">
-                    <a href="">
-                        <img class="avatar border-gray" src="~/content/assets/img/prov.jpg" alt="...">
-                        <h5 class="title">Proveedores</h5>
-                    </a>
-                </div>
-                <br />
-                <div style="text-align:center">
-                    <input type="button" class="btn-sm btn-info" style="text-align:center" value="Ver proveedores">
-                    <input type="button" class="btn-sm btn-success" style="text-align:center" value="Nuevo proveedor">
-                </div>
+                <div class="row">
+                    <div class="author col-sm-12">
+                        <a href="@Url.Action("Index", "PROVEEDORES")">
+                            <img class="avatar border-gray" src="~/content/assets/img/prov.jpg" alt="...">
+                            <h5 class="title">Proveedores</h5>
+                        </a>
+                    </div>
+                    <p class="description text-center">
+                        En esta sección usted podrá manejar los proveedores diponibles o crear nuevos en el sistema.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="col-sm-12" style="text-align:center">
+                        <a href="@Url.Action("Index", "PROVEEDORES")">
+                            <input type="button" class="btn btn-info" style="text-align:center" value="Ver todos">
 
+                        </a>
+                        <a href="@Url.Action("Create", "PROVEEDORES")">
+                            <input type="button" class="btn btn-success" style="text-align:center" value="Nuevo">
+                        </a>
+                    </div>
+
+                </div>
             </div>
-
         </div>
     </div>
     <div class="col-md-4">
@@ -52,20 +73,63 @@
                 @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
             </div>
             <div class="card-body">
-                <div class="author">
-                    <a href="">
-                        <img class="avatar border-gray" src="~/content/assets/img/Almacen.jpg" alt="...">
-                        <h5 class="title">Ubicaciones</h5>
-                    </a>
-                </div>
-                <br />
-                <div style="text-align:center">
-                    <input type="button" class="btn-sm btn-info" style="text-align:center" value="Ver ubicaciones">
-                    <input type="button" class="btn-sm btn-success" style="text-align:center" value="Nueva ubicación">
-                </div>
+                <div class="row">
+                    <div class="author col-sm-12">
+                        <a href="@Url.Action("Index", "UBICACIONES")">
+                            <img class="avatar border-gray" src="~/content/assets/img/Almacen.jpg" alt="...">
+                            <h5 class="title">Ubicaciones</h5>
+                        </a>
+                    </div>
+                    <p class="description text-center">
+                        En esta sección se puede administrar las ubicaciones disponibles en el almacén o crear nuevas.
+                    </p>
+                    <br />
+                    <br/>
+                    <div class="col-sm-12" style="text-align:center">
+                        <a href="@Url.Action("Index", "UBICACIONES")">
+                            <input type="button" class="btn btn-info" style="text-align:center" value="Ver todas">
+                        </a>
+                        <a href="@Url.Action("Create", "UBICACIONES")">
+                            <input type="button" class="btn btn-success" style="text-align:center" value="Nueva">
 
+                        </a>
+                    </div>
+                </div>            
             </div>
+        </div>
+    </div>
+ 
+    <div class="col-md-4">
+        <div class="card card-user">
+            <div class="image">
+                @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="author col-sm-12">
+                        <a href="@Url.Action("Index", "MARCAS")">
+                            <img class="avatar border-gray" src="~/content/assets/img/marcas.jpg" alt="...">
+                            <h5 class="title">Marcas</h5>
+                        </a>
+                    </div>
+                    <p class="description text-center">
+                        Aquí usted podrá realizar mantenimientos a las marcas disponibles, o crear nuevas.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="col-sm-12" style="text-align:center">
+                        <a href="@Url.Action("Index", "MARCAS")">
+                            <input type="button" class="btn btn-info" style="text-align:center" value="Ver todas">
+                        </a>
+                        <a href="@Url.Action("Create", "MARCAS")">
+                            <input type="button" class="btn btn-success" style="text-align:center" value="Nueva">
+                        </a>
+                        
+                        
+                    </div>
 
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-md-4">
@@ -74,20 +138,32 @@
                 @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
             </div>
             <div class="card-body">
-                <div class="author">
-                    <a href="">
-                        <img class="avatar border-gray" src="~/content/assets/img/marcas.jpg" alt="...">
-                        <h5 class="title">Marcas</h5>
-                    </a>
-                </div>
-                <br />
-                <div style="text-align:center">
-                    <input type="button" class="btn-sm btn-info" style="text-align:center" value="Ver Marcas">
-                    <input type="button" class="btn-sm btn-success" style="text-align:center" value="Nueva marca">
+                <div class="row">
+                    <div class="author col-sm-12">
+                        <a href="@Url.Action("Index", "TIPOS")">
+                            <img class="avatar border-gray" src="~/content/assets/img/tipo.jpg" alt="...">
+                            <h5 class="title">Tipos</h5>
+                        </a>
+                    </div>
+                    <p class="description text-center">
+                        Sección para la administración de los tipos de piezas disponibles.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="col-sm-12" style="text-align:center">
+                        <a href="@Url.Action("Index", "TIPOS")">
+                            <input type="button" class="btn btn-info" style="text-align:center" value="Ver todos">
+
+                        </a>
+                        <a href="@Url.Action("Create", "TIPOS")">
+                            <input type="button" class="btn btn-success" style="text-align:center" value="Nuevo">
+
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
     </div>
     <div class="col-md-4">
@@ -96,42 +172,31 @@
                 @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
             </div>
             <div class="card-body">
-                <div class="author">
-                    <a href="">
-                        <img class="avatar border-gray" src="~/content/assets/img/tipo.jpg" alt="...">
-                        <h5 class="title">Tipos de piezas</h5>
-                    </a>
-                </div>
-                <br />
-                <div style="text-align:center">
-                    <input type="button" class="btn-sm btn-info" style="text-align:center" value="Ver tipos">
-                    <input type="button" class="btn-sm btn-success" style="text-align:center" value="Nuevo tipo">
-                </div>
+                <div class="row">
+                    <div class="author col-sm-12">
+                        <a href="@Url.Action("Index", "ACCOUNT")">
+                            <img class="avatar border-gray" src="~/content/assets/img/usuario.jpg" alt="...">
+                            <h5 class="title">Usuarios</h5>
+                        </a>
+                    </div>
+                    <p class="description text-center">
+                        Seeción donde se podrán administrar los usuarios hábiles del sistema.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="col-sm-12" style="text-align:center">
+                        <a href="@Url.Action("Index", "ACCOUNT")">
+                            <input type="button" class="btn btn-info" style="text-align:center" value="Ver todos">
 
+                        </a>
+                        <a href="@Url.Action("Create", "ACCOUNT")">
+                            <input type="button" class="btn btn-success" style="text-align:center" value="Nuevo">
+
+                        </a>
+                    </div>
+
+                </div>
             </div>
-
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card card-user">
-            <div class="image">
-                @*<img src="https://thumbs.dreamstime.com/b/texturice-la-tela-manchada-o-el-material-de-papel-del-color-beige-oscuro-95236683.jpg" alt="...">*@
-            </div>
-            <div class="card-body">
-                <div class="author">
-                    <a href="">
-                        <img class="avatar border-gray" src="~/content/assets/img/usuario.jpg" alt="...">
-                        <h5 class="title">Usuarios</h5>
-                    </a>
-                </div>
-                <br />
-                <div style="text-align:center">
-                    <input type="button" class="btn-sm btn-info" style="text-align:center" value="Ver usuaios">
-                    <input type="button" class="btn-sm btn-success" style="text-align:center" value="Nuevo usuario">
-                </div>
-
-            </div>
-
         </div>
     </div>
 </div>
