@@ -4,9 +4,78 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Proveedores</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead class=" text-primary">
+                            <th>
+                                Cédula/RNC
+                            </th>
+                            <th>
+                                Nombre
+                            </th>
+                        
+                            <th>
+                                Teléfono
+                            </th>
+                            <th>
+                                Teléfono 2
+                            </th>
+                            <th class="text-right">
+                            
+                            </th>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>
+                                    001-8293839-2
+                                </td>
+                                <td>
+                                    UNIXUS S, A
+                                </td>
+                                <td>
+                                    809-789-2839
+                                </td>
+                                <td>
+                                    N/A
+                                </td>
+                                <td class="text-right">
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    001-6393819-4
+                                </td>
+                                <td>
+                                    INICAROS
+                                </td>
+                                <td>
+                                    829-889-1833
+                                </td>
+                                <td>
+                                    N/A
+                                </td>
+                                <td class="text-right">
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
@@ -48,4 +117,4 @@
     </tr>
 }
 
-</table>
+</table>*@

@@ -3,13 +3,90 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
-
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear nueva", "Create")
 </p>
-<table class="table">
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Categorías</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead class=" text-primary">
+                        <th>
+                            Nombre
+                        </th>
+
+                        <th class="text-right">
+                        </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Aceite hidráulico
+                                </td>
+                                <td>
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Banda de frenos
+                                </td>
+                                <td>
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Bombillo
+                                </td>
+                                <td>
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Bujía
+                                </td>
+                                <td>
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Motor de arranque
+                                </td>
+                                <td>
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Retrovisor
+                                </td>
+                                <td>
+                                    <input type="button" class="btn btn-warning" value="Modificar" />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.TIPO_DESCRIP)
@@ -30,4 +107,4 @@
     </tr>
 }
 
-</table>
+</table>*@

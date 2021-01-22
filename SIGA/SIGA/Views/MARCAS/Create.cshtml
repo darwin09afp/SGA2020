@@ -3,14 +3,40 @@
 @{
     ViewBag.Title = "Create";
 }
+<div>
+    @Html.ActionLink("Ver todas", "Index")
+</div>
+<br />
+<div class="col-md-6">
+    <div class="card card-user">
+        <div class="card-header">
+            <h5 class="card-title">Nueva marca</h5>
+        </div>
+        <div class="card-body">
+            <form>
+                @*<p><Strong>Nuevo pasillo</Strong></p>*@
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Nombre de marca</label>
+                            <input type="text" required class="form-control" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="col-md-12 " style="text-align:center">
+                        <div class="form-group content-center">
+                            <button type="submit" class="btn btn-primary btn-round">Guardar</button>
+                        </div>
+                    </div>
+                </div>
 
-<h2>Create</h2>
-
-
-@using (Html.BeginForm()) 
+            </form>
+        </div>
+    </div>
+</div>
+@*@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>TBL_MARCAS</h4>
         <hr />
@@ -29,12 +55,10 @@
             </div>
         </div>
     </div>
-}
+}*@
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+
 
 @*@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}*@
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@

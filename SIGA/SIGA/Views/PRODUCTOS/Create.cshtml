@@ -3,14 +3,186 @@
 @{
     ViewBag.Title = "Create";
 }
+<div>
+    @Html.ActionLink("Volver", "Index")
+</div>
+<br />
+<div class="col-md-12">
+    <div class="card card-user">
+        <div class="card-header">
+            <h5 class="card-title">Nuevo producto</h5>
+        </div>
+        <div class="card-body">
+            <form>
+                <p><Strong>Detalles de producto</Strong></p>
+                <div class="row">
+                    <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                            <label>Nombre del producto</label>
+                            <input required type="text" class="form-control" placeholder="Nombre del producto" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-1">
+                        <div class="form-group">
+                            <label>Categoría</label>
+                            <select required class="form-control" id="n">
+                                <option selected disabled>Seleccionar tipo</option>
+                                <option>Aceite hidraulico</option>
+                                <option>Banda de frenos</option>
+                                <option>Bombillo</option>
+                                <option>Bujía</option>
+                                <option>Motor de arranque</option>
+                                <option>Retrovisor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-1">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Marca</label>
+                            <select required class="form-control" id="exampleFormControlSelect1">
+                                <option selected disabled>Seleccionar marca</option>
+                                <option>Bosch</option>
+                                <option>Eurol</option>
+                                <option>Honda</option>
+                                <option>Kombat</option>
+                                <option>Toyota</option>
+                                <option>Wurth</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1 px-1">
+                        <div class="form-group">
+                            <label>Precio $</label>
+                            <input required type="number" class="form-control" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="col-md-1 pl-1">
+                        <div class="form-group">
+                            <label>Costo $</label>
+                            <input required type="number" class="form-control" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                            <label>Modelo</label>
+                            <input required type="text" class="form-control" placeholder="Modelo">
+                        </div>
+                    </div>
+                    <div class="col-md-1 px-1">
+                        <div class="form-group">
+                            <label>Cantidad</label>
+                            <input required type="number" class="form-control" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                        <div class="form">
+                            <label class="border-dark">Imagen</label>
+                            <input required type="file" class="form-control" placeholder="Seleccionar imagen">
+                        </div>
+                    </div>
+                    <div class="col-md-1 px-1">
+                        <div class="form-group">
+                            <label>Pasillo</label>
+                                <select required class="form-control" id="n">
+                                    <option selected disabled>Pasillo</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    
+                                </select>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-1 px-1">
+                        <div class="form-group">
+                            <label>Sección</label>
+                            <select required class="form-control" id="n">
+                                <option selected disabled>Sección</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
 
-<h2>Create</h2>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1 pl-1">
+                        <div class="form-group">
+                            <label>Nivel</label>
+                            <select required class="form-control" id="n">
+                                <option selected disabled>Nivel</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <textarea required class="form-control textarea">Escribir una breve descripción del producto</textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p><Strong>Proveedor</Strong></p>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Buscar proveedor</label>
+                            <input required type="text" class="form-control" placeholder="Escribir Nombre, Cédula/RNC o teléfono de proveedor" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="~/Content/assets/img/iconos/lupa.png" width="100">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                            <label>Cédula/RNC</label>
+                            <input type="text" disabled class="form-control" placeholder="Cédula/RNC" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="text" disabled class="form-control" placeholder="Nombre" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="number" disabled class="form-control" placeholder="Teléfono">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="update ml-auto mr-auto">
+                        <button type="submit" class="btn btn-primary btn-round">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
-@using (Html.BeginForm()) 
+
+@*@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>TBL_PRODUCTOS</h4>
         <hr />
@@ -85,12 +257,10 @@
             </div>
         </div>
     </div>
-}
+}*@
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+
 
 @*@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}*@
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
